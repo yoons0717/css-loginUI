@@ -1,0 +1,122 @@
+:root {
+  /* color */
+  --white-color: #fff;
+  --black-color: #140a00;
+  --purple-light-color: #ae90e9;
+  --purple-dark-color: #55249b;
+  --grey-dark-color: #909090;
+  --grey-light-color: #e0e0e0;
+
+  /* Size */
+  --padding: 24px;
+  --margin: 12px;
+  --avatar-size: 36px;
+
+  /* Font Size */
+  --font-large: 18px;
+  --font-medium: 14px;
+  --font-small: 12px;
+  --font-micro: 10px;
+}
+
+* {
+  font-family: Consolas, sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+button,
+button:focus {
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+/* header */
+header .logo img {
+  width: 150px;
+  height: 120px;
+}
+
+/* login */
+.login {
+  padding: var(--padding);
+}
+.login .title {
+  margin-bottom: var(--margin);
+}
+
+.login .loginform {
+  display: flex;
+  flex-direction: column;
+  color: var(--grey-dark-color);
+}
+.login .loginform .form-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: var(--margin);
+}
+.login .loginform .form-item input {
+  padding: calc(var(--padding) / 2);
+  border: 1px solid var(--grey-light-color);
+  border-radius: 15px;
+}
+.login .loginform .form-check {
+  margin-bottom: var(--margin);
+}
+.login .loginform label {
+  color: var(--grey-dark-color);
+  font-size: var(--font-medium);
+  margin-bottom: var(--margin);
+}
+.login .loginform .loginbtn {
+  background-color: var(--purple-light-color);
+  width: 100%;
+  padding: calc(var(--padding) / 2);
+  color: white;
+  border-radius: 15px;
+}
+
+.login .moreopt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: var(--margin);
+}
+.login .moreopt span {
+  margin-top: var(--margin);
+}
+.login .moreopt a {
+  color: var(--purple-dark-color);
+  font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    display: flex;
+  }
+  .login {
+    width: 45%;
+    height: 80vh;
+  }
+  .mainpic {
+    display: flex;
+
+    width: 55%;
+    height: 80vh;
+    background-color: var(--purple-light-color);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .login {
+    max-width: 500px;
+    height: 80vh;
+  }
+  .mainpic {
+    width: 100%;
+  }
+}
