@@ -34,9 +34,15 @@ button:focus {
   cursor: pointer;
   outline: none;
 }
-
-/* header */
-header .logo img {
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.wrapper .login .logo {
+  text-align: center;
+}
+.wrapper .logo img {
   width: 150px;
   height: 120px;
 }
@@ -97,24 +103,27 @@ header .logo img {
 @media screen and (min-width: 768px) {
   .wrapper {
     display: flex;
+    height: 100%;
   }
   .login {
     width: 45%;
-    height: 80vh;
+    height: 100%;
   }
   .mainpic {
     display: flex;
 
     width: 55%;
-    height: 80vh;
+
     background-color: var(--purple-light-color);
   }
 }
 
 @media screen and (min-width: 1024px) {
+  .wrapper {
+    height: 100%;
+  }
   .login {
     max-width: 500px;
-    height: 80vh;
   }
   .mainpic {
     width: 100%;
